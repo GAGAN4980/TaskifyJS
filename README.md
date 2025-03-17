@@ -41,37 +41,37 @@ TaskifyJS is a **lightweight, feature-rich task management application** built u
 
 ---
 
-##🎨 **Technologies Used**
+## 🎨 **Technologies Used**
 1. HTML5
 2. CSS3 (Flexbox, Responsive Design)
 3. Vanilla JavaScript (ES6+)
 
 ---
 
-##🛠 **Upcoming Features**
+## 🛠 **Upcoming Features**
 🔹 Due Date & Reminders
 🔹 Drag & Drop Task Reordering
 🔹 User Authentication for Syncing Tasks
 
 ---
 
-##🤝 **Contributing**
+## 🤝 **Contributing**
 Contributions are welcome! If you find a bug or want to add features:
 
 ---
 
-##**Fork the repository**
+## **Fork the repository**
 1. Create a new branch (feature-new-feature)
 2. Commit your changes
 3. Open a Pull Request 🚀
 
 ---
 
-##📝 **License**
+## 📝 **License**
 This project is open-source and available under the MIT License.
 
 ---
 
-##🎯 **Show Your Support**
+## 🎯 **Show Your Support**
 ⭐ If you like this project, give it a star on GitHub ⭐!
 🚀 Happy Coding!
