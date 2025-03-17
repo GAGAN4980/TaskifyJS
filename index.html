@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management App</h1>
+        <button id="themeToggle">Toggle Theme</button>
+
+        <!-- Task Form -->
+        <form id="task-form">
+            <label for="title">Task Title:</label>
+            <input type="text" id="title" placeholder="Task Title" required>
+
+            <label for="description">Task Description:</label>
+            <textarea id="description" placeholder="Task Description" required></textarea>
+
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="filters">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search tasks..." oninput="taskManager.filterAndSearchTasks()">
+                <span class="search-icon">🔍</span>
+            </div>
+            <select id="filterCategory" onchange="taskManager.filterAndSearchTasks()">
+                <option value="all" selected>All Categories</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </div>       
+
+        <!-- Task List -->
+        <div id="task-list"></div>
+
+        <!-- Notification -->
+        <div id="notification" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
